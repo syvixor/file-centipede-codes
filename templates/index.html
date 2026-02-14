@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>File Centipede Activation Codes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-stone-900 select-none font-mono">
+    <div class="space-y-2 p-4">
+        <div class="flex flex-col">
+            <h1 class="text-white text-2xl font-bold tracking-tight">File Centipede</h1>
+            <p class="text-white/85 text-base font-medium tracking-tight">Activation Codes</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {% for i in data %}
+            <div class="bg-stone-800 transition-colors space-y-2 py-4 px-2 hover:bg-stone-700">
+                <div class="text-white/85 text-sm font-medium">{{ i.dateRange }}</div>
+                <div class="bg-stone-900 select-text cursor-text p-2">
+                    <code class="text-yellow-600 text-sm break-all">{{ i.activationCode }}</code>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
